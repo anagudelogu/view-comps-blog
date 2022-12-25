@@ -54,3 +54,8 @@ group :development do
   gem "rubocop-rails"                         # Rails Style Monitoring
   gem "rubocop-rspec"                         # Rspec Style Monitoring
 end
+
+group :test do
+  gem "capybara"
+  gem "webdrivers", "~> 5.0", require: false
+end
